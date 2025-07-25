@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Summer Camp Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Summer Camp Registration</h2>
+    <form>
+      <label for="childName">Full Name of Child</label>
+      <input type="text" id="childName" name="childName" />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="1" max="18" />
+
+      <div class="gender-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+      </div>
+
+      <label for="parentName">Full Name of Parent/Guardian</label>
+      <input type="text" id="parentName" name="parentName" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="startDate">Start Date of Camp</label>
+      <input type="date" id="startDate" name="startDate" />
+
+      <label>Preferred Activities</label>
+      <div class="activities">
+        <label><input type="checkbox" name="activity" value="Swimming" /> Swimming</label>
+        <label><input type="checkbox" name="activity" value="Art" /> Art</label>
+        <label><input type="checkbox" name="activity" value="Drama" /> Drama</label>
+        <label><input type="checkbox" name="activity" value="Soccer" /> Soccer</label>
+      </div>
+
+      <label for="activityLevel">Activity Level</label>
+      <input type="range" id="activityLevel" name="activityLevel" class="slider" min="0" max="10" />
+
+      <label for="medicalInfo">Medical information</label>
+      <textarea id="medicalInfo" name="medicalInfo"></textarea>
+
+      <div class="upload-section">
+        <label for="photo">Upload Photo of Child</label>
+        <input type="file" id="photo" name="photo" />
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
